@@ -4,5 +4,12 @@
 			"src": "/",
 			"dest": "/api/index.js"
 		}
-	]
+	],
+	"functions": {
+		"api/index.js": {
+			"includeFiles": [
+				"index.html", "index.html.gz"
+			]
+		}
+	}
 }

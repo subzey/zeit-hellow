@@ -1,5 +1,6 @@
 const url = require('url');
 const fs = require('fs');
+const path = require('path');
 
 module.exports = (req, resp) => {
 	const gzip = (req['accept-encoding'] || '').split(/\s+/).includes('gzip');
@@ -15,8 +16,12 @@ module.exports = (req, resp) => {
 	resp.writeHead(200, headers);
 
 	if (gzip) {
-		fs.createReadStream('./index.html.gz').pipe(resp);
+		fs.createReadStream(
+			path.resolve(__dirname, 'index.html.gz')
+		).pipe(resp);
 	} else {
-		fs.createReadStream('./index.html').pipe(resp);
+		fs.createReadStream(
+			path.resolve(__dirname, 'index.html')
+		).pipe(resp);
 	}
 }
