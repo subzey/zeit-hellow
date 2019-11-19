@@ -1,0 +1,12 @@
+{
+	"routes": [
+		{
+			"src": "/",
+			"dest": "/index.html.gz",
+			"headers": {
+				"Content-Type": "text/html",
+				"Content-Encoding": "gzip"
+			}
+		}
+	]
+}
