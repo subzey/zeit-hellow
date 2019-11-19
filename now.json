@@ -4,9 +4,9 @@
 			"src": "/",
 			"dest": "/index.html.gz",
 			"headers": {
-				"Content-Type": "text/html",
+				"Content-Type": "text/html; charset=utf-8",
 				"Content-Encoding": "gzip",
-				"Content-Disposition": null,
+				"Content-Disposition": "inline",
 			}
 		}
 	]
