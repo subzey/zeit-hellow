@@ -5,7 +5,8 @@
 			"dest": "/index.html.gz",
 			"headers": {
 				"Content-Type": "text/html",
-				"Content-Encoding": "gzip"
+				"Content-Encoding": "gzip",
+				"Content-Disposition": null,
 			}
 		}
 	]
