@@ -2,12 +2,7 @@
 	"routes": [
 		{
 			"src": "/",
-			"dest": "/index.html.gz",
-			"headers": {
-				"Content-Type": "text/html; charset=utf-8",
-				"Content-Encoding": "gzip",
-				"Content-Disposition": "inline",
-			}
+			"dest": "/api/index.js"
 		}
 	]
 }
