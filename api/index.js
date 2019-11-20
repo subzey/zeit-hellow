@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = (req, resp) => {
-	const gzip = (req['accept-encoding'] || '').split(/\s+/).includes('gzip');
+	const gzip = (req.headers['accept-encoding'] || '').split(/\s+/).includes('gzip');
 
 	const headers = {
 		'content-type': 'text/html; charset=utf-8',
