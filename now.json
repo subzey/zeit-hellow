@@ -2,11 +2,11 @@
 	"routes": [
 		{
 			"src": "/",
-			"dest": "/api/index.js"
+			"dest": "/api/index.ts"
 		}
 	],
 	"functions": {
-		"api/index.js": {
+		"api/index.ts": {
 			"includeFiles": "api/*.*"
 		}
 	}
