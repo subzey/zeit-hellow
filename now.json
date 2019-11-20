@@ -8,7 +8,7 @@
 	"functions": {
 		"api/index.js": {
 			"includeFiles": [
-				"index.html", "index.html.gz"
+				"api/index.html", "api/index.html.gz"
 			]
 		}
 	}
